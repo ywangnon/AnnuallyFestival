@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  AnuallyFestival
 //
-//  Created by Hansub Yoo on 2018. 8. 11..
+//  Created by Hansub Yoo on 2018. 8. 20..
 //  Copyright © 2018년 hansub yoo. All rights reserved.
 //
 

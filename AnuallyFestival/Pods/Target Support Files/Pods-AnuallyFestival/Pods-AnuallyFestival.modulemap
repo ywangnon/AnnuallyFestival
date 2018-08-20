@@ -1,0 +1,6 @@
+framework module Pods_AnuallyFestival {
+  umbrella header "Pods-AnuallyFestival-umbrella.h"
+
+  export *
+  module * { export * }
+}

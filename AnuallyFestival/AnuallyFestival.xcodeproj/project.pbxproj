@@ -7,73 +7,126 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		012A8CC5211F19D200CA3BA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A8CC4211F19D200CA3BA6 /* AppDelegate.swift */; };
-		012A8CC7211F19D200CA3BA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A8CC6211F19D200CA3BA6 /* ViewController.swift */; };
-		012A8CCA211F19D200CA3BA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012A8CC8211F19D200CA3BA6 /* Main.storyboard */; };
-		012A8CCC211F19D600CA3BA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012A8CCB211F19D600CA3BA6 /* Assets.xcassets */; };
-		012A8CCF211F19D600CA3BA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012A8CCD211F19D600CA3BA6 /* LaunchScreen.storyboard */; };
+		017F69BC2129EEB9002735E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F69BB2129EEB9002735E7 /* AppDelegate.swift */; };
+		017F69C12129EEB9002735E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017F69BF2129EEB9002735E7 /* Main.storyboard */; };
+		017F69C32129EEBC002735E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017F69C22129EEBC002735E7 /* Assets.xcassets */; };
+		017F69C62129EEBC002735E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017F69C42129EEBC002735E7 /* LaunchScreen.storyboard */; };
+		017F69D1212A0175002735E7 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F69D0212A0175002735E7 /* CalendarController.swift */; };
+		017F69D3212A0183002735E7 /* FollowingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F69D2212A0183002735E7 /* FollowingController.swift */; };
+		85F23A7AC59F6348274B33AE /* Pods_AnuallyFestival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B271A8274A057A11717A73D /* Pods_AnuallyFestival.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		012A8CC1211F19D200CA3BA6 /* AnuallyFestival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnuallyFestival.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		012A8CC4211F19D200CA3BA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		012A8CC6211F19D200CA3BA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		012A8CC9211F19D200CA3BA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		012A8CCB211F19D600CA3BA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		012A8CCE211F19D600CA3BA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		012A8CD0211F19D600CA3BA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		017F69B82129EEB9002735E7 /* AnuallyFestival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnuallyFestival.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		017F69BB2129EEB9002735E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		017F69C02129EEB9002735E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		017F69C22129EEBC002735E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		017F69C52129EEBC002735E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		017F69C72129EEBC002735E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		017F69D0212A0175002735E7 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
+		017F69D2212A0183002735E7 /* FollowingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingController.swift; sourceTree = "<group>"; };
+		1049604CDE32C9AC3635FEF2 /* Pods-AnuallyFestival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnuallyFestival.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnuallyFestival/Pods-AnuallyFestival.debug.xcconfig"; sourceTree = "<group>"; };
+		4EBAA2139970244B111135F0 /* Pods-AnuallyFestival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnuallyFestival.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnuallyFestival/Pods-AnuallyFestival.release.xcconfig"; sourceTree = "<group>"; };
+		7B271A8274A057A11717A73D /* Pods_AnuallyFestival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnuallyFestival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		012A8CBE211F19D200CA3BA6 /* Frameworks */ = {
+		017F69B52129EEB9002735E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85F23A7AC59F6348274B33AE /* Pods_AnuallyFestival.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		012A8CB8211F19D200CA3BA6 = {
+		017F69AF2129EEB9002735E7 = {
 			isa = PBXGroup;
 			children = (
-				012A8CC3211F19D200CA3BA6 /* AnuallyFestival */,
-				012A8CC2211F19D200CA3BA6 /* Products */,
+				017F69BA2129EEB9002735E7 /* AnuallyFestival */,
+				017F69B92129EEB9002735E7 /* Products */,
+				F406AF069FB55A44E66DA3CD /* Pods */,
+				780412D81B46A2F326D56994 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		012A8CC2211F19D200CA3BA6 /* Products */ = {
+		017F69B92129EEB9002735E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				012A8CC1211F19D200CA3BA6 /* AnuallyFestival.app */,
+				017F69B82129EEB9002735E7 /* AnuallyFestival.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		012A8CC3211F19D200CA3BA6 /* AnuallyFestival */ = {
+		017F69BA2129EEB9002735E7 /* AnuallyFestival */ = {
 			isa = PBXGroup;
 			children = (
-				012A8CC4211F19D200CA3BA6 /* AppDelegate.swift */,
-				012A8CC6211F19D200CA3BA6 /* ViewController.swift */,
-				012A8CC8211F19D200CA3BA6 /* Main.storyboard */,
-				012A8CCB211F19D600CA3BA6 /* Assets.xcassets */,
-				012A8CCD211F19D600CA3BA6 /* LaunchScreen.storyboard */,
-				012A8CD0211F19D600CA3BA6 /* Info.plist */,
+				017F69BB2129EEB9002735E7 /* AppDelegate.swift */,
+				017F69D4212AD426002735E7 /* Festival */,
+				017F69D5212AD438002735E7 /* Following */,
+				017F69BF2129EEB9002735E7 /* Main.storyboard */,
+				017F69C22129EEBC002735E7 /* Assets.xcassets */,
+				017F69C42129EEBC002735E7 /* LaunchScreen.storyboard */,
+				017F69C72129EEBC002735E7 /* Info.plist */,
+				017F69CD2129EF71002735E7 /* Image */,
 			);
 			path = AnuallyFestival;
+			sourceTree = "<group>";
+		};
+		017F69CD2129EF71002735E7 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		017F69D4212AD426002735E7 /* Festival */ = {
+			isa = PBXGroup;
+			children = (
+				017F69D0212A0175002735E7 /* CalendarController.swift */,
+			);
+			path = Festival;
+			sourceTree = "<group>";
+		};
+		017F69D5212AD438002735E7 /* Following */ = {
+			isa = PBXGroup;
+			children = (
+				017F69D2212A0183002735E7 /* FollowingController.swift */,
+			);
+			path = Following;
+			sourceTree = "<group>";
+		};
+		780412D81B46A2F326D56994 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B271A8274A057A11717A73D /* Pods_AnuallyFestival.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F406AF069FB55A44E66DA3CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1049604CDE32C9AC3635FEF2 /* Pods-AnuallyFestival.debug.xcconfig */,
+				4EBAA2139970244B111135F0 /* Pods-AnuallyFestival.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		012A8CC0211F19D200CA3BA6 /* AnuallyFestival */ = {
+		017F69B72129EEB9002735E7 /* AnuallyFestival */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 012A8CD3211F19D600CA3BA6 /* Build configuration list for PBXNativeTarget "AnuallyFestival" */;
+			buildConfigurationList = 017F69CA2129EEBC002735E7 /* Build configuration list for PBXNativeTarget "AnuallyFestival" */;
 			buildPhases = (
-				012A8CBD211F19D200CA3BA6 /* Sources */,
-				012A8CBE211F19D200CA3BA6 /* Frameworks */,
-				012A8CBF211F19D200CA3BA6 /* Resources */,
+				F20B710218A45D9910F65FA8 /* [CP] Check Pods Manifest.lock */,
+				017F69B42129EEB9002735E7 /* Sources */,
+				017F69B52129EEB9002735E7 /* Frameworks */,
+				017F69B62129EEB9002735E7 /* Resources */,
+				BB14109CF0C6E0B5A2AE5334 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -81,25 +134,25 @@
 			);
 			name = AnuallyFestival;
 			productName = AnuallyFestival;
-			productReference = 012A8CC1211F19D200CA3BA6 /* AnuallyFestival.app */;
+			productReference = 017F69B82129EEB9002735E7 /* AnuallyFestival.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		012A8CB9211F19D200CA3BA6 /* Project object */ = {
+		017F69B02129EEB9002735E7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "hansub yoo";
 				TargetAttributes = {
-					012A8CC0211F19D200CA3BA6 = {
+					017F69B72129EEB9002735E7 = {
 						CreatedOnToolsVersion = 9.4;
 					};
 				};
 			};
-			buildConfigurationList = 012A8CBC211F19D200CA3BA6 /* Build configuration list for PBXProject "AnuallyFestival" */;
+			buildConfigurationList = 017F69B32129EEB9002735E7 /* Build configuration list for PBXProject "AnuallyFestival" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,54 +160,94 @@
 				en,
 				Base,
 			);
-			mainGroup = 012A8CB8211F19D200CA3BA6;
-			productRefGroup = 012A8CC2211F19D200CA3BA6 /* Products */;
+			mainGroup = 017F69AF2129EEB9002735E7;
+			productRefGroup = 017F69B92129EEB9002735E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				012A8CC0211F19D200CA3BA6 /* AnuallyFestival */,
+				017F69B72129EEB9002735E7 /* AnuallyFestival */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		012A8CBF211F19D200CA3BA6 /* Resources */ = {
+		017F69B62129EEB9002735E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				012A8CCF211F19D600CA3BA6 /* LaunchScreen.storyboard in Resources */,
-				012A8CCC211F19D600CA3BA6 /* Assets.xcassets in Resources */,
-				012A8CCA211F19D200CA3BA6 /* Main.storyboard in Resources */,
+				017F69C62129EEBC002735E7 /* LaunchScreen.storyboard in Resources */,
+				017F69C32129EEBC002735E7 /* Assets.xcassets in Resources */,
+				017F69C12129EEB9002735E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BB14109CF0C6E0B5A2AE5334 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AnuallyFestival/Pods-AnuallyFestival-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnuallyFestival/Pods-AnuallyFestival-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F20B710218A45D9910F65FA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnuallyFestival-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		012A8CBD211F19D200CA3BA6 /* Sources */ = {
+		017F69B42129EEB9002735E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				012A8CC7211F19D200CA3BA6 /* ViewController.swift in Sources */,
-				012A8CC5211F19D200CA3BA6 /* AppDelegate.swift in Sources */,
+				017F69D1212A0175002735E7 /* CalendarController.swift in Sources */,
+				017F69BC2129EEB9002735E7 /* AppDelegate.swift in Sources */,
+				017F69D3212A0183002735E7 /* FollowingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		012A8CC8211F19D200CA3BA6 /* Main.storyboard */ = {
+		017F69BF2129EEB9002735E7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				012A8CC9211F19D200CA3BA6 /* Base */,
+				017F69C02129EEB9002735E7 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		012A8CCD211F19D600CA3BA6 /* LaunchScreen.storyboard */ = {
+		017F69C42129EEBC002735E7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				012A8CCE211F19D600CA3BA6 /* Base */,
+				017F69C52129EEBC002735E7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -162,7 +255,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		012A8CD1211F19D600CA3BA6 /* Debug */ = {
+		017F69C82129EEBC002735E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -222,7 +315,7 @@
 			};
 			name = Debug;
 		};
-		012A8CD2211F19D600CA3BA6 /* Release */ = {
+		017F69C92129EEBC002735E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -276,17 +369,15 @@
 			};
 			name = Release;
 		};
-		012A8CD4211F19D600CA3BA6 /* Debug */ = {
+		017F69CB2129EEBC002735E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1049604CDE32C9AC3635FEF2 /* Pods-AnuallyFestival.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XP44KJ6JB3;
 				INFOPLIST_FILE = AnuallyFestival/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yoo.AnuallyFestival;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -294,17 +385,15 @@
 			};
 			name = Debug;
 		};
-		012A8CD5211F19D600CA3BA6 /* Release */ = {
+		017F69CC2129EEBC002735E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EBAA2139970244B111135F0 /* Pods-AnuallyFestival.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XP44KJ6JB3;
 				INFOPLIST_FILE = AnuallyFestival/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yoo.AnuallyFestival;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -315,25 +404,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		012A8CBC211F19D200CA3BA6 /* Build configuration list for PBXProject "AnuallyFestival" */ = {
+		017F69B32129EEB9002735E7 /* Build configuration list for PBXProject "AnuallyFestival" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				012A8CD1211F19D600CA3BA6 /* Debug */,
-				012A8CD2211F19D600CA3BA6 /* Release */,
+				017F69C82129EEBC002735E7 /* Debug */,
+				017F69C92129EEBC002735E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		012A8CD3211F19D600CA3BA6 /* Build configuration list for PBXNativeTarget "AnuallyFestival" */ = {
+		017F69CA2129EEBC002735E7 /* Build configuration list for PBXNativeTarget "AnuallyFestival" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				012A8CD4211F19D600CA3BA6 /* Debug */,
-				012A8CD5211F19D600CA3BA6 /* Release */,
+				017F69CB2129EEBC002735E7 /* Debug */,
+				017F69CC2129EEBC002735E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 012A8CB9211F19D200CA3BA6 /* Project object */;
+	rootObject = 017F69B02129EEB9002735E7 /* Project object */;
 }
