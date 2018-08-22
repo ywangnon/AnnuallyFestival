@@ -13,6 +13,7 @@
 		017F69C62129EEBC002735E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017F69C42129EEBC002735E7 /* LaunchScreen.storyboard */; };
 		017F69D1212A0175002735E7 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F69D0212A0175002735E7 /* CalendarController.swift */; };
 		017F69D3212A0183002735E7 /* FollowingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F69D2212A0183002735E7 /* FollowingController.swift */; };
+		017F69D7212D96A3002735E7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F69D6212D96A3002735E7 /* DetailViewController.swift */; };
 		85F23A7AC59F6348274B33AE /* Pods_AnuallyFestival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B271A8274A057A11717A73D /* Pods_AnuallyFestival.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		017F69C72129EEBC002735E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		017F69D0212A0175002735E7 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		017F69D2212A0183002735E7 /* FollowingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingController.swift; sourceTree = "<group>"; };
+		017F69D6212D96A3002735E7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		1049604CDE32C9AC3635FEF2 /* Pods-AnuallyFestival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnuallyFestival.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnuallyFestival/Pods-AnuallyFestival.debug.xcconfig"; sourceTree = "<group>"; };
 		4EBAA2139970244B111135F0 /* Pods-AnuallyFestival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnuallyFestival.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnuallyFestival/Pods-AnuallyFestival.release.xcconfig"; sourceTree = "<group>"; };
 		7B271A8274A057A11717A73D /* Pods_AnuallyFestival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnuallyFestival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				017F69D0212A0175002735E7 /* CalendarController.swift */,
+				017F69D6212D96A3002735E7 /* DetailViewController.swift */,
 			);
 			path = Festival;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				017F69D1212A0175002735E7 /* CalendarController.swift in Sources */,
 				017F69BC2129EEB9002735E7 /* AppDelegate.swift in Sources */,
 				017F69D3212A0183002735E7 /* FollowingController.swift in Sources */,
+				017F69D7212D96A3002735E7 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +381,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XP44KJ6JB3;
 				INFOPLIST_FILE = AnuallyFestival/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yoo.AnuallyFestival;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -393,7 +400,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XP44KJ6JB3;
 				INFOPLIST_FILE = AnuallyFestival/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yoo.AnuallyFestival;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
