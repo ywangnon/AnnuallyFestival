@@ -152,10 +152,10 @@
             </objects>
             <point key="canvasLocation" x="2250" y="-391.90140845070425"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="eo2-yh-v5f">
             <objects>
-                <viewController id="M2H-eo-QST" sceneMemberID="viewController">
+                <viewController id="M2H-eo-QST" customClass="DetailViewController" customModule="AnuallyFestival" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9FA-yO-cmP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
