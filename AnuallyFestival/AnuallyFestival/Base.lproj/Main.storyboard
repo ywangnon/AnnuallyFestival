@@ -133,9 +133,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="NdQ-SX-7fk" appends="YES" id="tB8-3m-alu"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -152,7 +149,6 @@
                     <navigationItem key="navigationItem" id="bBt-JO-yHe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udU-Ot-wCU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="NdQ-SX-7fk"/>
             </objects>
             <point key="canvasLocation" x="2250" y="-391.90140845070425"/>
         </scene>
