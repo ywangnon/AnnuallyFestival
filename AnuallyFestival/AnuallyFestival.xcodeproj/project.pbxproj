@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01061ED12136DCBB008C1E5B /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01061ED02136DCBB008C1E5B /* EventCell.swift */; };
 		017F69BC2129EEB9002735E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F69BB2129EEB9002735E7 /* AppDelegate.swift */; };
 		017F69C12129EEB9002735E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017F69BF2129EEB9002735E7 /* Main.storyboard */; };
 		017F69C32129EEBC002735E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017F69C22129EEBC002735E7 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01061ED02136DCBB008C1E5B /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		017F69B82129EEB9002735E7 /* AnuallyFestival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnuallyFestival.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		017F69BB2129EEB9002735E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		017F69C02129EEB9002735E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			children = (
 				017F69D0212A0175002735E7 /* CalendarController.swift */,
 				017F69D6212D96A3002735E7 /* DetailViewController.swift */,
+				01061ED02136DCBB008C1E5B /* EventCell.swift */,
 			);
 			path = Festival;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			files = (
 				017F69D1212A0175002735E7 /* CalendarController.swift in Sources */,
 				017F69BC2129EEB9002735E7 /* AppDelegate.swift in Sources */,
+				01061ED12136DCBB008C1E5B /* EventCell.swift in Sources */,
 				017F69D3212A0183002735E7 /* FollowingController.swift in Sources */,
 				017F69D7212D96A3002735E7 /* DetailViewController.swift in Sources */,
 			);
