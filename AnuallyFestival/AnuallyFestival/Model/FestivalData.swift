@@ -8,7 +8,9 @@
 
 import Foundation
 
-
+struct festivalData {
+    <#fields#>
+}
 /********************************************
  <item>
  <addr1>서울특별시 송파구 양재대로 932</addr1>
