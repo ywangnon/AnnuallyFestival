@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D788C1216A944C004A11FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D788C0216A944C004A11FA /* AppDelegate.swift */; };
+		01D788C3216A944C004A11FA /* FestivalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D788C2216A944C004A11FA /* FestivalViewController.swift */; };
+		01D788C6216A944C004A11FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D788C4216A944C004A11FA /* Main.storyboard */; };
+		01D788C8216A944E004A11FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D788C7216A944E004A11FA /* Assets.xcassets */; };
+		01D788CB216A944E004A11FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D788C9216A944E004A11FA /* LaunchScreen.storyboard */; };
+		01D788D5216A98D8004A11FA /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D788D4216A98D8004A11FA /* FollowViewController.swift */; };
+		01D788D8216D6FF4004A11FA /* FestivalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D788D7216D6FF4004A11FA /* FestivalCell.swift */; };
+		01D788DB216EB14D004A11FA /* Festival.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D788DA216EB14D004A11FA /* Festival.swift */; };
+		01D78902217FC498004A11FA /* AboutDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D78901217FC498004A11FA /* AboutDate.swift */; };
+		01EF514121866FB100BFCDBA /* FestivalFollowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF514021866FB100BFCDBA /* FestivalFollowCell.swift */; };
+		01EF51432189EF2500BFCDBA /* FollowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF51422189EF2500BFCDBA /* FollowData.swift */; };
+		5A66B14F2EBDD53D8622B42C /* Pods_AnnuallyFestival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AF2F22A5F35586EAE33188 /* Pods_AnnuallyFestival.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01D788BD216A944C004A11FA /* AnnuallyFestival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnnuallyFestival.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D788C0216A944C004A11FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01D788C2216A944C004A11FA /* FestivalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalViewController.swift; sourceTree = "<group>"; };
+		01D788C5216A944C004A11FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01D788C7216A944E004A11FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01D788CA216A944E004A11FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01D788CC216A944E004A11FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D788D4216A98D8004A11FA /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
+		01D788D7216D6FF4004A11FA /* FestivalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalCell.swift; sourceTree = "<group>"; };
+		01D788DA216EB14D004A11FA /* Festival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Festival.swift; sourceTree = "<group>"; };
+		01D78901217FC498004A11FA /* AboutDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDate.swift; sourceTree = "<group>"; };
+		01EF514021866FB100BFCDBA /* FestivalFollowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalFollowCell.swift; sourceTree = "<group>"; };
+		01EF51422189EF2500BFCDBA /* FollowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowData.swift; sourceTree = "<group>"; };
+		58AF2F22A5F35586EAE33188 /* Pods_AnnuallyFestival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnnuallyFestival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		770ECA77D8868FD25560B8E5 /* Pods-AnnuallyFestival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnnuallyFestival.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnnuallyFestival/Pods-AnnuallyFestival.debug.xcconfig"; sourceTree = "<group>"; };
+		F6489491AB9CBC61CC2F029D /* Pods-AnnuallyFestival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnnuallyFestival.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnnuallyFestival/Pods-AnnuallyFestival.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01D788BA216A944C004A11FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A66B14F2EBDD53D8622B42C /* Pods_AnnuallyFestival.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01D788B4216A944C004A11FA = {
+			isa = PBXGroup;
+			children = (
+				01D788BF216A944C004A11FA /* AnnuallyFestival */,
+				01D788BE216A944C004A11FA /* Products */,
+				46473923E1784D780DCBF785 /* Pods */,
+				410A495A5A4321C29E16EB54 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		01D788BE216A944C004A11FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01D788BD216A944C004A11FA /* AnnuallyFestival.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01D788BF216A944C004A11FA /* AnnuallyFestival */ = {
+			isa = PBXGroup;
+			children = (
+				01D788C0216A944C004A11FA /* AppDelegate.swift */,
+				01D788D9216D716E004A11FA /* Data */,
+				01D788D6216A9EF7004A11FA /* Cell */,
+				01D788D2216A9889004A11FA /* Festival */,
+				01D788D3216A9894004A11FA /* Follow */,
+				01D788C7216A944E004A11FA /* Assets.xcassets */,
+				01D788C4216A944C004A11FA /* Main.storyboard */,
+				01D788C9216A944E004A11FA /* LaunchScreen.storyboard */,
+				01D788CC216A944E004A11FA /* Info.plist */,
+			);
+			path = AnnuallyFestival;
+			sourceTree = "<group>";
+		};
+		01D788D2216A9889004A11FA /* Festival */ = {
+			isa = PBXGroup;
+			children = (
+				01D788C2216A944C004A11FA /* FestivalViewController.swift */,
+				01D78901217FC498004A11FA /* AboutDate.swift */,
+			);
+			path = Festival;
+			sourceTree = "<group>";
+		};
+		01D788D3216A9894004A11FA /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				01D788D4216A98D8004A11FA /* FollowViewController.swift */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		01D788D6216A9EF7004A11FA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				01D788D7216D6FF4004A11FA /* FestivalCell.swift */,
+				01EF514021866FB100BFCDBA /* FestivalFollowCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		01D788D9216D716E004A11FA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				01D788DA216EB14D004A11FA /* Festival.swift */,
+				01EF51422189EF2500BFCDBA /* FollowData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		410A495A5A4321C29E16EB54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58AF2F22A5F35586EAE33188 /* Pods_AnnuallyFestival.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46473923E1784D780DCBF785 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				770ECA77D8868FD25560B8E5 /* Pods-AnnuallyFestival.debug.xcconfig */,
+				F6489491AB9CBC61CC2F029D /* Pods-AnnuallyFestival.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01D788BC216A944C004A11FA /* AnnuallyFestival */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D788CF216A944E004A11FA /* Build configuration list for PBXNativeTarget "AnnuallyFestival" */;
+			buildPhases = (
+				55393260136249BD240BE665 /* [CP] Check Pods Manifest.lock */,
+				01D788B9216A944C004A11FA /* Sources */,
+				01D788BA216A944C004A11FA /* Frameworks */,
+				01D788BB216A944C004A11FA /* Resources */,
+				3D179994A6458E7A63BB6293 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnnuallyFestival;
+			productName = AnnuallyFestival;
+			productReference = 01D788BD216A944C004A11FA /* AnnuallyFestival.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01D788B5216A944C004A11FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "hansub yoo";
+				TargetAttributes = {
+					01D788BC216A944C004A11FA = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 01D788B8216A944C004A11FA /* Build configuration list for PBXProject "AnnuallyFestival" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01D788B4216A944C004A11FA;
+			productRefGroup = 01D788BE216A944C004A11FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01D788BC216A944C004A11FA /* AnnuallyFestival */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01D788BB216A944C004A11FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D788CB216A944E004A11FA /* LaunchScreen.storyboard in Resources */,
+				01D788C8216A944E004A11FA /* Assets.xcassets in Resources */,
+				01D788C6216A944C004A11FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D179994A6458E7A63BB6293 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AnnuallyFestival/Pods-AnnuallyFestival-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnnuallyFestival/Pods-AnnuallyFestival-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55393260136249BD240BE665 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnnuallyFestival-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01D788B9216A944C004A11FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EF51432189EF2500BFCDBA /* FollowData.swift in Sources */,
+				01EF514121866FB100BFCDBA /* FestivalFollowCell.swift in Sources */,
+				01D788D5216A98D8004A11FA /* FollowViewController.swift in Sources */,
+				01D788C3216A944C004A11FA /* FestivalViewController.swift in Sources */,
+				01D788C1216A944C004A11FA /* AppDelegate.swift in Sources */,
+				01D78902217FC498004A11FA /* AboutDate.swift in Sources */,
+				01D788DB216EB14D004A11FA /* Festival.swift in Sources */,
+				01D788D8216D6FF4004A11FA /* FestivalCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		01D788C4216A944C004A11FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01D788C5216A944C004A11FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01D788C9216A944E004A11FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01D788CA216A944E004A11FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01D788CD216A944E004A11FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01D788CE216A944E004A11FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01D788D0216A944E004A11FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 770ECA77D8868FD25560B8E5 /* Pods-AnnuallyFestival.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XP44KJ6JB3;
+				INFOPLIST_FILE = AnnuallyFestival/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoo.AnnuallyFestival;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01D788D1216A944E004A11FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6489491AB9CBC61CC2F029D /* Pods-AnnuallyFestival.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XP44KJ6JB3;
+				INFOPLIST_FILE = AnnuallyFestival/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoo.AnnuallyFestival;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01D788B8216A944C004A11FA /* Build configuration list for PBXProject "AnnuallyFestival" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D788CD216A944E004A11FA /* Debug */,
+				01D788CE216A944E004A11FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01D788CF216A944E004A11FA /* Build configuration list for PBXNativeTarget "AnnuallyFestival" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D788D0216A944E004A11FA /* Debug */,
+				01D788D1216A944E004A11FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01D788B5216A944C004A11FA /* Project object */;
+}
