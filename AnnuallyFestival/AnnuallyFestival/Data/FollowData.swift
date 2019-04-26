@@ -8,9 +8,4 @@
 
 import Foundation
 
-var myFollowFestivals = UserDefaults.standard
-let key = "FollowFestival"
-
-protocol sendFollowFestivalData {
-    func followfestival(cell: FestivalCell)
-}
+var followFestivals = [Festival]()

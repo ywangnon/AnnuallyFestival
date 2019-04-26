@@ -9,6 +9,15 @@
 import UIKit
 
 class FestivalCell: UITableViewCell  {
+
+    var festivalName = String()
+    var festivalStartDate = String()
+    var festivalEndDate = String()
+    var festivalTel: String?
+    var festivalIMGString: String?
+    var festivalSumIMGString: String?
+    var festivalAddress: String?
+    var festivalDetailAddress: String?
     
     @IBOutlet var festivalIMG: UIImageView!
     
@@ -17,68 +26,21 @@ class FestivalCell: UITableViewCell  {
     
     @IBOutlet var follow: UIButton!
     
-    var delegate: sendFollowFestivalData?
-    
     @objc func toggleSelection() {
         follow.isSelected = !follow.isSelected
-        if follow.isSelected == true {
-            print(follow.isSelected)
-            delegate?.followfestival(cell: self)
-            print("pass")
-//            myFollowFestivals.set([Festival](), forKey: key)
-        } else {
-            print(follow.isSelected)
-        }
-        
-        print("<FollowList>")
-        
-        if let confirmDataArray: [Festival] = myFollowFestivals.object(forKey: key) as! [Festival] {
-            let readData = confirmDataArray
-            for festival in readData {
-                print(festival.title + " * ")
-            }
-        } else {
-            print("follow is nothing!")
-        }
-        
-        if myFollowFestivals.object(forKey: key) as! [Festival] == nil {
-            print("!!!")
-        }
+        print("follow: \(follow.isSelected)")
+//        let festival = Festival.init(title: self.festivalName,
+//                                     startDate: self.festivalStartDate,
+//                                     endDate: self.festivalEndDate,
+//                                     tel: self.festivalTel,
+//                                     img: self.festivalIMGString,
+//                                     sumImg: self.festivalSumIMGString,
+//                                     addr: self.festivalAddress,
+//                                     detailAddr: self.festivalDetailAddress)
+//        if follow.isSelected {
+//            followFestivals.append(festival)
+//        }
     }
-    
-//    @IBAction func FollowSelection(_ sender: UIButton) {
-//        follow.isSelected = !follow.isSelected
-//        if follow.isSelected == true {
-//            print(follow.isSelected)
-////            print(festivalTitle.text!)
-////            print(festivalDate.text!)
-//            sender.imageView?.image = #imageLiteral(resourceName: "full heart")
-//            let contentView = sender.superview
-//            let cell = contentView?.superview as! FestivalCell
-//            delegate?.followfestival(cell: cell)
-//        } else {
-//            print(follow.isSelected)
-//            sender.imageView?.image = #imageLiteral(resourceName: "empty heart")
-//            let contentView = sender.superview
-//            let cell = contentView?.superview as! FestivalCell
-//            delegate?.followfestival(cell: cell)
-//            print("pass")
-//        }
-//        print("follow list")
-//
-//        if let confirmDataArray: [Festival] = myFollowFestivals.object(forKey: key) as! [Festival] {
-//            let readData = confirmDataArray
-//            for festival in readData {
-//                print(festival.title + " * ")
-//            }
-//        } else {
-//            print("follow is nothing!")
-//        }
-//
-//        if myFollowFestivals.object(forKey: key) as! [Festival] == nil {
-//            print("!!!")
-//        }
-//    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -93,5 +55,4 @@ class FestivalCell: UITableViewCell  {
 
         // Configure the view for the selected state
     }
-
 }

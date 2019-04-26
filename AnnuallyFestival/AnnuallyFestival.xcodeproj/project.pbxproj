@@ -16,8 +16,9 @@
 		01D788D8216D6FF4004A11FA /* FestivalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D788D7216D6FF4004A11FA /* FestivalCell.swift */; };
 		01D788DB216EB14D004A11FA /* Festival.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D788DA216EB14D004A11FA /* Festival.swift */; };
 		01D78902217FC498004A11FA /* AboutDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D78901217FC498004A11FA /* AboutDate.swift */; };
-		01EF514121866FB100BFCDBA /* FestivalFollowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF514021866FB100BFCDBA /* FestivalFollowCell.swift */; };
 		01EF51432189EF2500BFCDBA /* FollowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF51422189EF2500BFCDBA /* FollowData.swift */; };
+		01F1731B223A86AE0060BEE0 /* DBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1731A223A86AE0060BEE0 /* DBModel.swift */; };
+		01F780B42237F65E006D5D73 /* FestivalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F780B32237F65E006D5D73 /* FestivalDetailViewController.swift */; };
 		5A66B14F2EBDD53D8622B42C /* Pods_AnnuallyFestival.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AF2F22A5F35586EAE33188 /* Pods_AnnuallyFestival.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,8 +34,9 @@
 		01D788D7216D6FF4004A11FA /* FestivalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalCell.swift; sourceTree = "<group>"; };
 		01D788DA216EB14D004A11FA /* Festival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Festival.swift; sourceTree = "<group>"; };
 		01D78901217FC498004A11FA /* AboutDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDate.swift; sourceTree = "<group>"; };
-		01EF514021866FB100BFCDBA /* FestivalFollowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalFollowCell.swift; sourceTree = "<group>"; };
 		01EF51422189EF2500BFCDBA /* FollowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowData.swift; sourceTree = "<group>"; };
+		01F1731A223A86AE0060BEE0 /* DBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBModel.swift; sourceTree = "<group>"; };
+		01F780B32237F65E006D5D73 /* FestivalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalDetailViewController.swift; sourceTree = "<group>"; };
 		58AF2F22A5F35586EAE33188 /* Pods_AnnuallyFestival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnnuallyFestival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		770ECA77D8868FD25560B8E5 /* Pods-AnnuallyFestival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnnuallyFestival.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnnuallyFestival/Pods-AnnuallyFestival.debug.xcconfig"; sourceTree = "<group>"; };
 		F6489491AB9CBC61CC2F029D /* Pods-AnnuallyFestival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnnuallyFestival.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnnuallyFestival/Pods-AnnuallyFestival.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				01D788C2216A944C004A11FA /* FestivalViewController.swift */,
+				01F780B32237F65E006D5D73 /* FestivalDetailViewController.swift */,
 				01D78901217FC498004A11FA /* AboutDate.swift */,
 			);
 			path = Festival;
@@ -107,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				01D788D7216D6FF4004A11FA /* FestivalCell.swift */,
-				01EF514021866FB100BFCDBA /* FestivalFollowCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -117,6 +119,7 @@
 			children = (
 				01D788DA216EB14D004A11FA /* Festival.swift */,
 				01EF51422189EF2500BFCDBA /* FollowData.swift */,
+				01F1731A223A86AE0060BEE0 /* DBModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				TargetAttributes = {
 					01D788BC216A944C004A11FA = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -215,10 +219,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AnnuallyFestival/Pods-AnnuallyFestival-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -250,10 +258,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F780B42237F65E006D5D73 /* FestivalDetailViewController.swift in Sources */,
 				01EF51432189EF2500BFCDBA /* FollowData.swift in Sources */,
-				01EF514121866FB100BFCDBA /* FestivalFollowCell.swift in Sources */,
 				01D788D5216A98D8004A11FA /* FollowViewController.swift in Sources */,
 				01D788C3216A944C004A11FA /* FestivalViewController.swift in Sources */,
+				01F1731B223A86AE0060BEE0 /* DBModel.swift in Sources */,
 				01D788C1216A944C004A11FA /* AppDelegate.swift in Sources */,
 				01D78902217FC498004A11FA /* AboutDate.swift in Sources */,
 				01D788DB216EB14D004A11FA /* Festival.swift in Sources */,
@@ -411,7 +420,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yoo.AnnuallyFestival;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -430,7 +439,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yoo.AnnuallyFestival;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -7,23 +7,10 @@
 //
 
 import UIKit
+import RealmSwift
 import Alamofire
 
-class FestivalViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, XMLParserDelegate, sendFollowFestivalData {
-    
-    func sendData(data: Festival) {
-        print("save Data")
-        var readData: [Festival] = []
-        if let confirmDataArray: [Festival] = myFollowFestivals.object(forKey: key) as? [Festival] {
-            readData = confirmDataArray
-        }
-//        let encodedData = NSKeyedArchiver.archivedData(withRootObject: data)
-        print("<testData>")
-        
-//        print(encodedData)
-        readData.append(data)
-        myFollowFestivals.set(readData, forKey: key)
-    }
+class FestivalViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, XMLParserDelegate {
     
     @IBOutlet var festivalTableView: UITableView!
     
@@ -31,6 +18,8 @@ class FestivalViewController: UIViewController, UITableViewDataSource, UITableVi
     var festivalInfo = Festival.init(title: "", startDate: "", endDate: "", tel: nil, img: nil, sumImg: nil, addr: nil, detailAddr: nil)
     
     var currentElement = ""
+    
+    var festivalsDB: Results<DBFestival>!
     
     func requestFestivalInfo() {
         let date = AboutDate()
@@ -43,47 +32,58 @@ class FestivalViewController: UIViewController, UITableViewDataSource, UITableVi
         xmlParser.delegate = self
         xmlParser.parse()
         
+        print("Realm DB: ", Realm.Configuration.defaultConfiguration.fileURL!)
+        
         print("request parse")
     }
     
     // MARK: - table setting
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return festivals.count
+        return festivalsDB.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.festivalTableView.dequeueReusableCell(withIdentifier: "FestivalCell", for: indexPath) as! FestivalCell
-        cell.delegate = self
-        cell.festivalTitle.text = festivals[indexPath.row].title
-        cell.festivalDate.text = festivals[indexPath.row].startDate + " ~ " + festivals[indexPath.row].endDate
         
-        if festivals[indexPath.row].sumImg != nil {
-            let url = URL(string: festivals[indexPath.row].sumImg!)
-            if let imageData = try? Data(contentsOf: url!, options: []) {
-                cell.festivalIMG.image = UIImage(data: imageData)
-            }
+        cell.festivalTitle.text = festivalsDB[indexPath.row].title
+        cell.festivalDate.text = festivalsDB[indexPath.row].startDate + "~" + festivalsDB[indexPath.row].endDate
+        if let imgString = festivalsDB[indexPath.row].sumImg,
+            let url = URL(string: imgString),
+            let imgData = try? Data(contentsOf: url) {
+            cell.festivalIMG.image = UIImage(data: imgData)
         }
+        cell.follow.isSelected = festivalsDB[indexPath.row].follow 
+        cell.follow.tag = indexPath.row
+        cell.follow.addTarget(self, action: #selector(followButtonAction(_:)), for: .touchUpInside)
         
         return cell
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.setFestivals()
+        festivalTableView.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         festivalTableView.delegate = self
         festivalTableView.dataSource = self
         
         requestFestivalInfo()
-        
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     // MARK: - xml Parsing
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
         currentElement = elementName
         if(elementName == "item") {
-            festivalInfo = Festival.init(title: "", startDate: "", endDate: "", tel: nil, img: nil, sumImg: nil, addr: nil, detailAddr: nil)
+            festivalInfo = Festival.init(title: "",
+                                         startDate: "",
+                                         endDate: "",
+                                         tel: nil,
+                                         img: nil,
+                                         sumImg: nil,
+                                         addr: nil,
+                                         detailAddr: nil)
         }
     }
     
@@ -105,25 +105,112 @@ class FestivalViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         if(elementName == "item") {
-            festivals.append(festivalInfo)
+//            festivals.append(festivalInfo)
+            
+            do {
+                let realm = try Realm()
+                
+                let festival = DBFestival(//seq,
+                                          festivalInfo.title,
+                                          festivalInfo.startDate,
+                                          festivalInfo.endDate,
+                                          festivalInfo.tel,
+                                          festivalInfo.img,
+                                          festivalInfo.sumImg,
+                                          festivalInfo.addr,
+                                          festivalInfo.detailAddr,
+                                          false)
+                
+                let festivalss = realm.objects(DBFestival.self)
+                var test = false
+                for festivalone in festivalss {
+                    if festival.title == festivalone.title {
+                        test = true
+                    }
+                }
+                if !test {
+                    try realm.write {
+                        print(festival)
+                        realm.add(festival, update: true)
+                    }
+                }
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
         }
     }
+    
+    func setFestivals() {
+        do {
+            let realm = try Realm()
+            self.festivalsDB = realm.objects(DBFestival.self).sorted(byKeyPath: "startDate")
+            
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+    }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func followfestival(cell: FestivalCell) {
-//        let contentview = sender.superview
-//        let cell = contentview?.superview as! FestivalCell
-        print("delegate func")
-        let index = festivalTableView.indexPath(for: cell)?.row
-        print("index.row is \(index)")
+}
+
+extension FestivalViewController {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let detailView = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! FestivalDetailViewController
+        detailView.navigationItem.title = festivalsDB[indexPath.row].title
         
-        let addFollowFestival = festivals[index!]
-        print("followed festival is \(addFollowFestival.title)")
+        detailView.festivalImg = festivalsDB[indexPath.row].sumImg
+        detailView.festivalDate = festivalsDB[indexPath.row].startDate + " ~ " + festivalsDB[indexPath.row].endDate
+        detailView.festivalTel = festivalsDB[indexPath.row].tel
+        detailView.festivalAddr = festivalsDB[indexPath.row].addr
+        detailView.festivalDetail = festivalsDB[indexPath.row].detailAddr
         
-        sendData(data: addFollowFestival)
+        self.navigationController?.pushViewController(detailView, animated: true)
+    }
+}
+
+extension FestivalViewController {
+    @objc func followButtonAction(_ sender: UIButton) {
+        
+        let contentView = sender.superview
+        let cell = contentView?.superview as! FestivalCell
+        let title = cell.festivalTitle.text!
+        
+        if sender.isSelected {
+//            followFestivals.append(festivals[sender.tag])
+            do {
+                let realm = try Realm()
+                
+                let festival = realm.object(ofType: DBFestival.self, forPrimaryKey: title)!
+                
+                try realm.write {
+                    festival.follow = true
+                    
+                    realm.add(festival, update: true)
+                }
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        } else {
+//            followFestivals = followFestivals.filter { $0.title != festivals[sender.tag].title}
+            do {
+                let realm = try Realm()
+                
+                let festival = realm.object(ofType: DBFestival.self, forPrimaryKey: title)!
+                
+                
+                try realm.write {
+                    festival.follow = false
+                    realm.add(festival, update: true)
+                }
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        }
     }
 }

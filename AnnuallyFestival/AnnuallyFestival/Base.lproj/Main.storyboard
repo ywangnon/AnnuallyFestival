@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FY3-M6-gaU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FY3-M6-gaU">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Festival View Controller-->
+        <!--축제-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="FestivalViewController" customModule="AnnuallyFestival" customModuleProvider="target" sceneMemberID="viewController">
@@ -95,7 +92,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ste-0u-Od7"/>
+                    <navigationItem key="navigationItem" title="축제" id="Ste-0u-Od7"/>
                     <connections>
                         <outlet property="festivalTableView" destination="T22-Hm-GBb" id="kk2-s5-1lI"/>
                     </connections>
@@ -107,7 +104,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="9wD-iL-PDb">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FY3-M6-gaU" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabbar" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FY3-M6-gaU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PHA-xw-b1I">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -116,7 +113,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="Hbp-LW-evl" kind="relationship" relationship="viewControllers" id="p8S-GC-fbn"/>
-                        <segue destination="aTw-ge-y6e" kind="relationship" relationship="viewControllers" id="FTZ-xm-sWy"/>
+                        <segue destination="YP6-cL-Fjf" kind="relationship" relationship="viewControllers" id="FTZ-xm-sWy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMQ-BY-7S2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -142,16 +139,16 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="117.39130434782609"/>
         </scene>
-        <!--Follow-->
+        <!--팔로우-->
         <scene sceneID="UGy-Uu-y4z">
             <objects>
-                <viewController id="aTw-ge-y6e" sceneMemberID="viewController">
+                <viewController id="aTw-ge-y6e" customClass="FollowViewController" customModule="AnnuallyFestival" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sf8-dX-8Nu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="105" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nSc-cs-IRs">
-                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FestivalFollowCell" rowHeight="105" id="Lok-Xo-Rua" customClass="FestivalCell" customModule="AnnuallyFestival" customModuleProvider="target">
@@ -224,18 +221,110 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gKO-xC-GVB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Follow" image="follow heart" id="fal-iP-pyI"/>
+                    <navigationItem key="navigationItem" title="팔로우" id="LRx-Rc-1j1"/>
+                    <connections>
+                        <outlet property="followTable" destination="nSc-cs-IRs" id="KFZ-xN-HkX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8HA-Aw-bTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="822"/>
+            <point key="canvasLocation" x="2053.125" y="917.95774647887322"/>
+        </scene>
+        <!--Festival Detail View Controller-->
+        <scene sceneID="OSz-8g-AdW">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="BDH-tn-pFV" customClass="FestivalDetailViewController" customModule="AnnuallyFestival" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Foa-ZK-9c4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pUE-E9-gZa">
+                                <rect key="frame" x="10" y="30" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pUE-E9-gZa" secondAttribute="height" multiplier="1:1" id="Ghx-XF-JwO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="날짜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qT9-Ag-uSd">
+                                <rect key="frame" x="10" y="335" width="300" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="IG8-cR-NwI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="☎️" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDN-Yf-g8d">
+                                <rect key="frame" x="10" y="365" width="300" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="QAc-m4-XUd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="📇" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIr-bQ-e5l">
+                                <rect key="frame" x="10" y="395" width="300" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="ftM-uR-qSg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pUE-E9-gZa" firstAttribute="leading" secondItem="TUl-oi-by7" secondAttribute="leading" constant="10" id="6Fr-RO-7tX"/>
+                            <constraint firstItem="TUl-oi-by7" firstAttribute="trailing" secondItem="pDN-Yf-g8d" secondAttribute="trailing" constant="10" id="CIc-Da-2q1"/>
+                            <constraint firstItem="TUl-oi-by7" firstAttribute="trailing" secondItem="qT9-Ag-uSd" secondAttribute="trailing" constant="10" id="IVA-jb-YDC"/>
+                            <constraint firstItem="qT9-Ag-uSd" firstAttribute="leading" secondItem="TUl-oi-by7" secondAttribute="leading" constant="10" id="L2V-fM-sEO"/>
+                            <constraint firstItem="gIr-bQ-e5l" firstAttribute="top" secondItem="pDN-Yf-g8d" secondAttribute="bottom" constant="5" id="XBI-Dl-Rmg"/>
+                            <constraint firstItem="gIr-bQ-e5l" firstAttribute="leading" secondItem="TUl-oi-by7" secondAttribute="leading" constant="10" id="cr8-pD-Uw2"/>
+                            <constraint firstItem="pDN-Yf-g8d" firstAttribute="leading" secondItem="TUl-oi-by7" secondAttribute="leading" constant="10" id="eBg-hr-bes"/>
+                            <constraint firstItem="pDN-Yf-g8d" firstAttribute="top" secondItem="qT9-Ag-uSd" secondAttribute="bottom" constant="5" id="f6o-P6-KNG"/>
+                            <constraint firstItem="qT9-Ag-uSd" firstAttribute="top" secondItem="pUE-E9-gZa" secondAttribute="bottom" constant="5" id="iC2-yR-xvr"/>
+                            <constraint firstItem="TUl-oi-by7" firstAttribute="trailing" secondItem="pUE-E9-gZa" secondAttribute="trailing" constant="10" id="rga-zM-TPO"/>
+                            <constraint firstItem="TUl-oi-by7" firstAttribute="trailing" secondItem="gIr-bQ-e5l" secondAttribute="trailing" constant="10" id="usl-f4-1qq"/>
+                            <constraint firstItem="pUE-E9-gZa" firstAttribute="top" secondItem="TUl-oi-by7" secondAttribute="top" constant="10" id="wai-YP-Gkj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TUl-oi-by7"/>
+                    </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="gIr-bQ-e5l" id="i3M-Og-HZT"/>
+                        <outlet property="dateLabel" destination="qT9-Ag-uSd" id="apX-Nj-eFz"/>
+                        <outlet property="festivalImgView" destination="pUE-E9-gZa" id="PaW-ol-woS"/>
+                        <outlet property="telLabel" destination="pDN-Yf-g8d" id="hTU-t1-Ju2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxV-fI-Hwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3009.375" y="931.69014084507046"/>
+        </scene>
+        <!--Follow-->
+        <scene sceneID="RPG-pL-gLG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YP6-cL-Fjf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Follow" image="follow heart" id="fal-iP-pyI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gIr-1a-Lae">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aTw-ge-y6e" kind="relationship" relationship="rootViewController" id="fJj-ir-GOc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WHc-ye-wKz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055.625" y="917.95774647887322"/>
         </scene>
     </scenes>
     <resources>
-        <image name="empty heart" width="50" height="50"/>
-        <image name="event" width="25" height="25"/>
+        <image name="empty heart" width="37.5" height="37.5"/>
+        <image name="event" width="37.5" height="37.5"/>
         <image name="fireworks" width="295" height="293"/>
-        <image name="follow heart" width="25" height="25"/>
-        <image name="full heart" width="50" height="50"/>
+        <image name="follow heart" width="37.5" height="37.5"/>
+        <image name="full heart" width="37.5" height="37.5"/>
     </resources>
 </document>
